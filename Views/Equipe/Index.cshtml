@@ -8,17 +8,28 @@
 @* action -> ação a ser executada *@
 
 @* Formulario a ser preenchido *@
-<form method="POST" action='@Url.Action("Cadastrar")'>
-    <label>ID</label>
-    <input type="text" name="IdEquipe" />
+<div class="titulo_pagina">
+    <h1>cadastro de jogador</h1>
+</div>
 
-    <label>Nome</label>
-    <input type="text" name="Nome" />
+<form class="cadastro" action="@Url.Action("Cadastrar")" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
 
-    <label>Imagem</label>
-    <input type="text" name="Imagem" />
+    <div class="campo">
+        <label for="IdEquipe">IdEquipe</label>
+        <input type="text" name="IdEquipe" />
+    </div>
+
+    <div class="campo">
+        <label for="Nome">Nome</label>
+        <input type="text" name="Nome" />
+    </div>
+
+    <div class="campo">
+        <label for="Imagem">Imagem</label>
+        <input type="file" name="Imagem" />
+    </div>
     
-    <button type="submit">Cadastrar</button>
+    <button class="gradient btn" type="submit">Cadastrar</button>
 </form>
 
 <table class="table table-stripes table-responsive">
@@ -35,7 +46,8 @@
             <tr>
                 <td>@equipe.IdEquipe</td>
                 <td>@equipe.Nome</td>
-                <td>@equipe.Imagem</td>
+                <td><img src="/img/Equipes/@equipe.Imagem" alt="Imagem  da equipe @equipe.Nome" width="40"></td>
+                <td><a asp-area ="Link para excluir uma equipe" asp-controller="Equipe" asp-action="Excluir"asp-route-id="@equipe.IdEquipe">Excluir</a></td>
             </tr>
         }
     </tbody>
