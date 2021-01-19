@@ -35,3 +35,5 @@ G:\Projeto MVC\Projeto-MVC_E-Players\obj\Debug\netcoreapp3.1\Projeto-MVC_E-Playe
 G:\Projeto MVC\Projeto-MVC_E-Players\obj\Debug\netcoreapp3.1\Projeto-MVC_E-Players.pdb
 G:\Projeto MVC\Projeto-MVC_E-Players\obj\Debug\netcoreapp3.1\Projeto-MVC_E-Players.genruntimeconfig.cache
 G:\Projeto MVC\Projeto-MVC_E-Players\obj\Debug\netcoreapp3.1\Projeto-MVC_E-Players.csproj.CopyComplete
+G:\Projeto MVC\Projeto-MVC_E-Players\obj\Debug\netcoreapp3.1\Razor\Views\Jogador\Index.cshtml.g.cs
+G:\Projeto MVC\Projeto-MVC_E-Players\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
